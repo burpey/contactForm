@@ -47,6 +47,22 @@ body{
     }
 }
 
+.txtContainer2 {
+    position: fixed;
+    bottom: 40px;
+    margin-left: 250px;
+    color: white;
+    font-size: 16px;
+}
+
+.titleGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-right: 140px
+}
+
 
 .container2{
     position: absolute;
@@ -59,6 +75,8 @@ body{
     width: 100%;
     padding: 20px;
     z-index: 1;
+    height: 100vh; 
+   
 }
 
 .left
@@ -72,6 +90,8 @@ body{
     height: 100vh;
    
 }
+
+
 .right-wrapper {
     display: flex;
     justify-content: center; 
@@ -160,6 +180,15 @@ form button {
     cursor: pointer;
 }
 
+.txtContainer {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-left: 410px;
+    white-space: nowrap; 
+    margin-top: 30px;
+    position: absolute;
+}
 
 
 .button-Container {
@@ -213,3 +242,5 @@ form button {
 .submit:hover {
     background-color: #7c7c7c; 
 }
+
+
