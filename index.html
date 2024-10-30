@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forms</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -24,15 +27,15 @@
             <span style="--i:23;"></span>
             <span style="--i:16;"></span>
             <span style="--i:12;"></span>
-            <span style="--i:32;"></span>
+            <span style="--i:37;"></span>
             <span style="--i:26;"></span>
             <span style="--i:36;"></span>
             <span style="--i:42;"></span>
             <span style="--i:16;"></span>
-            <span style="--i:21;"></span>
-            <span style="--i:31;"></span>
-            <span style="--i:51;"></span>
-            <span style="--i:21;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:35;"></span>
+            <span style="--i:56;"></span>
+            <span style="--i:24;"></span>
             <span style="--i:26;"></span>
             <span style="--i:18;"></span>
             <span style="--i:51;"></span>
@@ -43,7 +46,7 @@
             <span style="--i:12;"></span>
             <span style="--i:99;"></span>
             <span style="--i:24;"></span>
-            <span style="--i:41;"></span>
+            <span style="--i:20;"></span>
             <span style="--i:34;"></span>
             <span style="--i:26;"></span>
             <span style="--i:32;"></span>
@@ -72,8 +75,58 @@
         </div>
     </div>
     <div class="container2">
-        <div class="left"></div>
-        <div class="right"></div>
+        <div class="left">
+            <div class="txtContainer">
+                <text style="font-weight: 800; font-family: 'Rubik', sans-serif; ;">ZERO GRAVITY</text>
+            </div>
+        </div>
+        <div class="titleContainer" >
+            <h2 style="color: white;">Have a project?</h2>
+        </div>
+        <div class="titleContainer2" >
+            <h2 style="color: white;">we would love</h2>
+        </div>
+        <div class="titleContainer3" >
+            <h2 style="color: white;">to help.</h2>
+        </div>
+        <div class="txtContainer2" >
+            <text style="color: white;">ojt-jhale@i4asiacorp.com</text>
+        </div>
+        <div class="right-wrapper">
+            <div class="right">
+                <form>
+                    <div class="txt">
+                        <text class="interest" style="color: #6e6e6e8f; font-size: 20px;">I'm interested in...</text>
+                    </div>
+                    <br>
+                    <div class="button-Container">
+                        <button type="button">UI/UX Design</button>
+                        <button type="button">Website</button>
+                        <button type="button">Branding</button>
+                        <button type="button">Design System</button>
+                        <button type="button">Other</button>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="1" required placeholder=" "></textarea>
+                        <label for="message">Tell us about your project</label>
+                    </div>
+                    
+                    <button class="submit" type="submit">Send Request</button>
+
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

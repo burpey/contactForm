@@ -6,6 +6,7 @@
 body{
     min-height: 100vh;
     background: #0c192c;
+    font-family: 'Rubik', sans-serif;
 }
 .container{
     position: relative;
@@ -44,4 +45,170 @@ body{
     100%{
         transform: translateY(-10vh) scale(1);
     }
+}
+
+
+.container2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+.left
+ {
+    position: relative;
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    height: 100vh;
+   
+}
+.right-wrapper {
+    display: flex;
+    justify-content: center; 
+    width: 600px; 
+    margin-right: 200px;
+}
+.right{
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(180, 180, 180, 0.151); 
+    height: 750px;
+    margin: 20px auto;
+    background: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea {
+    resize: none; 
+    height: 150px; 
+}
+
+
+
+form label {
+    position: absolute;
+    left: 10px; 
+    top: 10px; 
+    color: gray; 
+    transition: 0.2s;
+}
+
+
+input:focus + label,
+textarea:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label,
+input:valid + label,
+textarea:valid + label  {
+    top: -15px; 
+    left: 10px; 
+    font-size: 14px; 
+    color: #4CAF50;
+}
+
+input::placeholder,
+        textarea::placeholder {
+            color: transparent; 
+        }
+
+form button {
+    padding: 10px;
+    background-color: #fefffe;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.button-Container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.button-Container button {
+    background-color: transparent;
+    border: 2px solid gray;
+    color: white;
+    gap: 1px;
+    padding: 10px 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    transition: all 0.3s ease;
+}
+
+
+.button-Container button:hover {
+    border-color: #4CAF50;
+    color: #4CAF50;
+}
+
+
+.button-Container button:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.8), 0 0 20px rgba(76, 175, 80, 0.6);
+    color: #4CAF50;
+}
+
+.submit {
+    width: 150px;
+    padding: 10px 15px; 
+    background-color: white;
+    color: #000000; 
+    font-size: 16px; 
+    cursor: pointer; 
+    
+}
+
+
+.submit:hover {
+    background-color: #7c7c7c; 
 }
