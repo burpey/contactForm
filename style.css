@@ -252,5 +252,18 @@ form button {
 }
 
 
+@media (max-width: 992px) {
+    .container2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .txtContainer {
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .titleGroup h2 {
+        font-size: 40px;
+    }
+}
 
 
