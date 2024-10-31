@@ -8,6 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "pmG1rodyWjtIxdObv",
+            });
+        })();
+    </script>
+
+    
 </head>
 <body>
     <div class="container">
@@ -90,19 +105,20 @@
         </div>
         <div class="right-wrapper">
             <div class="right">
-                <form>
+                <form id="contact-form">
                     <div class="txt">
                         <text class="interest" style="color: #6e6e6e8f; font-size: 20px;">I'm interested in...</text>
                     </div>
                     <br>
                     <div class="button-Container">
-                        <button type="button">UI/UX Design</button>
-                        <button type="button">Website</button>
-                        <button type="button">Branding</button>
-                        <button type="button">Design System</button>
-                        <button type="button">Other</button>
+                        <button id="uiux" type="button" onclick="setInterest('UI/UX Design', this)">UI/UX Design</button>
+                        <button id="website" type="button" onclick="setInterest('Website', this)">Website</button>
+                        <button id="branding" type="button" onclick="setInterest('Branding', this)">Branding</button>
+                        <button id="design-system" type="button" onclick="setInterest('Design System', this)">Design System</button>
+                        <button id="other" type="button" onclick="setInterest('Other', this)">Other</button>
+                        <input type="hidden" id="interest" name="interest">
                     </div>
-
+                    
                     <div class="form-group">
                         <input type="text" id="name" name="name" required placeholder=" ">
                         <label for="name">Your Name</label>
@@ -124,5 +140,7 @@
             </div>
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
