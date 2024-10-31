@@ -297,8 +297,21 @@ form button {
         display: none;
     }
 }
-
-
+@media (max-width: 576px) {
+    .titleGroup h2 {
+        font-size: 28px;
+    }
+    .txtContainer {
+        font-size: 18px;
+    }
+    .right {
+        height: auto;
+        width: 100%;
+    }
+    .txtContainer2{
+        display: none;
+    }
+}
 
 
 
