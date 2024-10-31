@@ -249,6 +249,15 @@ form button {
         width: 500px;
         margin-right: 100px;
     }
+    .titleGroup{
+        margin-left: 80px;
+    }
+    .txtContainer{
+        margin-right: 60px;
+    }
+    .txtContainer2{
+        display: none;
+    }
 }
 
 
@@ -275,6 +284,20 @@ form button {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+    .right-wrapper {
+        width: 100%;
+        margin-right: 0;
+    }
+    .titleGroup h2 {
+        font-size: 35px;
+    }
+    .txtContainer2{
+        display: none;
+    }
+}
+
 
 
 
