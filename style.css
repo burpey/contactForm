@@ -244,3 +244,13 @@ form button {
 }
 
 
+@media (max-width: 1200px) {
+    .right-wrapper {
+        width: 500px;
+        margin-right: 100px;
+    }
+}
+
+
+
+
