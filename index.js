@@ -17,7 +17,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     emailjs.send("service_0v661dq","template_hsb55zn", {
         from_name: name,
-        reply_to: name,
+        reply_to: email,
         interest: interest,
         message: message
     })
